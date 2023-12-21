@@ -23,7 +23,7 @@ useEffect(() => {
 fetch("http://localhost:3000/seeds/allseeds")
 .then(response => response.json())
 .then(data => {
-  console.log(data);
+  
   setAllseeds(data)
 })
 }, []);

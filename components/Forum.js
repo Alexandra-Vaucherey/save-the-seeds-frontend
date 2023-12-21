@@ -13,7 +13,7 @@ function Forum() {
     fetch("http://localhost:3000/message/allmessages") //searching all the values stored in the DB
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        
         setMessage(data.message); //setting it as the msg to return
         setAllMessagesData(data.message);
       });

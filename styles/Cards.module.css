@@ -5,6 +5,7 @@
   margin: 50px auto;
   gap: 50px;
   justify-content: center;
+  
 }
 
 .card {
@@ -82,6 +83,7 @@
   margin: 45px, 0px, 0px;
   padding: 10px 30px;
   align-self: flex-end;
+  cursor: pointer;
 }
 .desc {
   text-align: justify;

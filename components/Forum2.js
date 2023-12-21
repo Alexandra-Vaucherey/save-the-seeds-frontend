@@ -6,7 +6,7 @@ import { text } from "@fortawesome/fontawesome-svg-core";
 
 function Forum2() {
   const user = useSelector((state) => state.user.value);
-  console.log(user);
+
   const router = useRouter();
   const [comment, setComment] = useState("");
   const [title, setTitle] = useState("");
@@ -14,7 +14,7 @@ function Forum2() {
   const onClickHandler = () => {
     if (user.token === null) {
       //to not allow someone to submit a post ithout a token
-      console.log("Utilisateur non connecté");
+     
     } else {
       fetch("http://localhost:3000/message/newmessage", {
         method: "POST",
@@ -30,13 +30,13 @@ function Forum2() {
           if (data.result === true) {
             router.push("/forum");
           } else {
-            console.log("Utilisateur non connecté");
+            
           }
         });
     }
   };
 
-  console.log("comment and title states:", comment, title);
+  
 
   const onChangeTitleHandler = (e) => {
     setTitle(e.target.value);

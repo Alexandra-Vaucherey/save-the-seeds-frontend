@@ -63,11 +63,22 @@
     align-items: flex-end;
 }
 
-.quote{
+.quoteLeft{
     color: #224229;
     opacity: 25%;
-    position: absolute;   
+    position: relative;   
     font-size: 150px;
+    z-index: -1;  
+    
+}
+
+.quoteRight{
+    color: #224229;
+    opacity: 25%;
+    position: relative;   
+    font-size: 150px;
+    z-index: -1;
+    float: right;
 }
 
 .answers{

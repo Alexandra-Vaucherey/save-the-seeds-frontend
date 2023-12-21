@@ -83,7 +83,7 @@ function Map() {
         throw new Error(`Erreur lors de la requête POST : ${response.status}`);
       }
       const data = await response.json();
-      console.log("Réponse du backend :", data);
+     
     } catch (error) {
       console.error("Erreur :", error);
 
@@ -93,7 +93,7 @@ function Map() {
 
 
   useEffect(() => {
-    console.log(token);
+    
     fetch("http://localhost:3000/pointgps/displaypointgps", {
       method: "POST",
       headers: {
@@ -106,7 +106,7 @@ function Map() {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data);
+        
         setPlace(data.value)
       })
   }, []);
@@ -117,7 +117,7 @@ function Map() {
     <MapContainer center={[latitude, longitude]} zoom={13} style={{ height: "calc(100vh - 180px)", width: "100vw", position: "relative" }}
       whenReady={(map) => {
         // quand la map est rdy, stock dans map les méthodes de leaflets dispo
-        console.log(map);
+        
         // utilise la reconnaissance d'un click pour stock dans e les infos
         map.target.on("click", function (e) {
           // extraits les clés lat & lng de l'objet e.latlng
@@ -128,8 +128,7 @@ function Map() {
 
           // Ajouter dans un useState ou en BDD
 
-          // console.log("lat", lat)
-          // console.log("lng", lng)
+         
 
         });
       }}>

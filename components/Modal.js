@@ -42,7 +42,7 @@ function Modale() {
     body: JSON.stringify({username: signInUsername, password: signInPassword}),
     }).then(response => response.json())
     .then(data => {
-      console.log('The result is', data)
+     
       if(data.result){
         dispatch(login({username: signInUsername, token: data.token}));
         setSignInUsername('');
@@ -66,7 +66,7 @@ function Modale() {
       </Button>
       </div>
     )}
-    console.log(user)
+  
     
 
   return (

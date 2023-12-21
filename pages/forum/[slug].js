@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useSelector } from "react-redux";
 import { useEffect, useState, useRef } from 'react';
 import styles from "../../styles/Post.module.css";
-import { faUser, faComment, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faComment, faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from 'antd';
 
 
@@ -27,7 +27,7 @@ function posteBlog() {
             date: new Date().toISOString()
             
           };
-          console.log('comment is', commentData)
+        
         fetch(`http://localhost:3000/answers/${posteInformation.slug}`, {
             method: 'POST',
             headers: {'Content-type': 'application/json'},
@@ -55,7 +55,7 @@ function posteBlog() {
             fetch('http://localhost:3000/message/getmessage/'+router.query.slug)
             .then(response => response.json())
             .then(data => {
-                console.log('The result is',data)
+               
                 if(data.result){           
                     setPosteInformation(data.forum)
                     setNumberComments(data.forum.answers.length)
@@ -113,8 +113,9 @@ function posteBlog() {
         <FontAwesomeIcon icon={faComment}/><p>{numberComments} commentaires</p>
             </div>
         </div>
-        <FontAwesomeIcon icon={faQuoteLeft} className={styles.quote}/>
+        <FontAwesomeIcon icon={faQuoteLeft} className={styles.quoteLeft}/>
         <p className={styles.post}>{posteInformation?.text}</p>
+        <FontAwesomeIcon icon={faQuoteRight} className={styles.quoteRight}/>
         </div>
         <div className={styles.answers}>
             <h4 className={styles.titleAnswers}>Réponses</h4>

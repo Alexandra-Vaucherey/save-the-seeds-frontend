@@ -7,7 +7,7 @@ function Profil() {
   // etat pour stocker les plantes qu on va incrementer
   const [listePlantes, setListePlantes] = useState(0);
   useEffect(() => {
-    console.log(token);
+   
     fetch(`http://localhost:3000/seeds/findseeds`, {
       method: "POST",
       headers: {
@@ -50,7 +50,7 @@ function Profil() {
       .then((data) => {
         if (data.result) {
           setNewPlant("");
-          console.log("Plante enregistrée en BDD");
+         
         }
       });
   }

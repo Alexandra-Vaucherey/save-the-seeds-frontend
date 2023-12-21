@@ -10,7 +10,7 @@ function AboutUs() {
   const [showPurpose, setShowPurpose] = useState(false);
 
   const handleClick = () => {
-    console.log("Click");
+    
     setShowWho(!showWho);
     setShowWhy(false);
     setShowHow(false);
@@ -18,7 +18,7 @@ function AboutUs() {
   };
 
   const handleClick2 = () => {
-    console.log("Click");
+   
     setShowWhy(!showWhy);
     setShowWho(false);
     setShowHow(false);
@@ -26,7 +26,7 @@ function AboutUs() {
   };
 
   const handleClick3 = () => {
-    console.log("Click");
+   
     setShowHow(!showHow);
     setShowWhy(false);
     setShowWho(false);
@@ -34,7 +34,7 @@ function AboutUs() {
   };
 
   const handleClick4 = () => {
-    console.log("Click");
+    
     setShowPurpose(!showPurpose);
     setShowWhy(false);
     setShowHow(false);

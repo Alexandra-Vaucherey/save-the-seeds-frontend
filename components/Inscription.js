@@ -36,9 +36,9 @@ function Inscription() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+       
         if (data.result) {
-          console.log(data);
+         
           dispatch(login({ username: signUpUsername, token: data.token }));
           setSignUpUsername("");
           setSignUpPassword("");
