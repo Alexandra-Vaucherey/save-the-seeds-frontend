@@ -137,19 +137,19 @@ function Map() {
 
         <ul>
           <li style={{ color: "red" }}>
-            Zone où il est interdit de planter
+            Zones où il est interdit de planter
           </li>
           <li style={{ color: "green" }}>
-            Zone où planter des pommier pour son altitude, son climat favorable, la réduction des maladies et l'eau de qualité
+            Zones où planter des pommier pour son altitude, son climat favorable, la réduction des maladies et l'eau de qualité
           </li>
           <li style={{ color: "blue" }}>
-            Zone ou planter des rosacées pour son microclimat, la résistance au sel et la pollinisation
+            Zones où planter des rosacées pour son microclimat, la résistance au sel et la pollinisation
           </li>
           <li style={{ color: "purple" }}>
-            Zone ou planter des Lauracées
+            Zones où planter des Lauracées
           </li>
           <li>
-            <img src="https://unpkg.com/leaflet@1.7/dist/images/marker-icon.png"></img>la ou j'ai planter
+            <img src="https://unpkg.com/leaflet@1.7/dist/images/marker-icon.png"></img>là où j'ai planter
           </li>
         </ul>
       </div>
@@ -167,16 +167,16 @@ function Map() {
       <Rectangle bounds={rectangle} pathOptions={greenOptions} />
       <Polyline pathOptions={purpleOptions} positions={multiPolyline} />
       <Circle center={center} pathOptions={redOptions} radius={3000} >
-        <Popup>zone ou planter ou il est interdit de planter</Popup>
+        <Popup>zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center1} pathOptions={redOptions} radius={5000} >
-        <Popup>zone ou planter ou il est interdit de planter</Popup>
+        <Popup>zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center2} pathOptions={redOptions} radius={5000} >
-        <Popup>zone ou planter ou il est interdit de planter</Popup>
+        <Popup>zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center3} pathOptions={redOptions} radius={5000} >
-        <Popup>zone ou planter ou il est interdit de planter</Popup>
+        <Popup>zone où il est interdit de planter</Popup>
       </Circle>
 
     </MapContainer>

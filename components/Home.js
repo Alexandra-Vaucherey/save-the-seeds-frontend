@@ -34,13 +34,11 @@ fetch("http://localhost:3000/seeds/allseeds")
 
       <div className={styles.buttonCountainer1}>
         <div>
-          <input
-            className={styles.inputStyle}
-            onChange={(e) => setLookingForSeeds(e.target.value)}
-            value={lookingForSeeds}
-            onKeyDown={handleKeyDown}
-            placeholder="Recherche de Type de Graines"
-          />
+        <Link href='/tutos'>
+          <Button
+            className={styles.inputStyle}              
+          >Comment créer vos semis ?</Button>
+          </Link>
         </div>
         <div>
           <Link href='/maps'>

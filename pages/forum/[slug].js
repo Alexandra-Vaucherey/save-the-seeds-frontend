@@ -20,7 +20,7 @@ function posteBlog() {
     const [newComment, setNewComment] = useState('');
 
     const handleClick = () => {
-        console.log('Click')
+      
         const commentData = {
             content: newComment,
            author: {username: user.username},
@@ -37,7 +37,8 @@ function posteBlog() {
         .then((data) => {
             if(data.result === true){
                 setAnswers([...answers, commentData])
-                setNewComment('')               
+                setNewComment('')   
+                setNumberComments(numberComments+1)            
             }
         })
         
@@ -71,10 +72,9 @@ function posteBlog() {
         year: 'numeric'
       });
 
-      console.log('answers is', answers)
+    
       const allanswers = answers.map((data, i) => {
-        console.log('user is', data.author?.username)
-          console.log('data is :', data?.date)
+     
           const formattedDate2 = new Date(data.date).toLocaleDateString('en-GB', {
               day: '2-digit',
               month: '2-digit',
@@ -123,9 +123,11 @@ function posteBlog() {
          <div className={styles.comment}>
             <h4 className={styles.response}>Répondre</h4> 
             <p>Message</p>
-        <input className={styles.input} onChange={onChangeHandler}>
-        </input>
+        <textarea placeholder = 'Publier votre commentaire'className={styles.input} onChange={onChangeHandler} value={newComment}>
+        </textarea>
+        <div className={styles.bttn}>
         <Button className={styles.button}onClick={handleClick}>Répondre</Button>
+        </div>
         </div>
       </div>
     </div>

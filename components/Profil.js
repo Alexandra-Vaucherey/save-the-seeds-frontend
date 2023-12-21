@@ -88,14 +88,14 @@ function Profil() {
           <div>Votre impact: </div>
         </div>
         <div className={styles.impact}>
-          <div className={styles.plants}>Plants:{listePlantes} </div>
+          <div className={styles.plants}>Plantes:{listePlantes} </div>
           <div className={styles.co2}>
             {/* on reprend le tableau et on multiplis par la valeur du nbre de CO2 absorbé par an (une moyenne de 19kg) */}
-            Co2 Absorbé: {listePlantes * 19} kg/an.
+            CO₂ Absorbé: {listePlantes * 19} kg/an.
           </div>
         </div>
         <div className={styles.middleContainer}>
-          <div className={styles.liste}>List des derniers semis : </div>
+          <div className={styles.liste}>Liste des derniers semis : </div>
           <form className={styles.input}>
             <input
               onChange={(e) => setNewPlant(e.target.value)}

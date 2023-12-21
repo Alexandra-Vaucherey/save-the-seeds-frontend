@@ -73,7 +73,7 @@ function AboutUs() {
                 Nous nous engageons à favoriser un changement positif dans le
                 monde en minimisant notre empreinte environnementale. Conscients
                 de l’augmentation alarmante de 12 % des émissions mondiales de
-                CO2 au cours de la dernière décennie, nous sommes déterminés à
+                CO₂ au cours de la dernière décennie, nous sommes déterminés à
                 contribuer à une solution. Notre objectif est de faciliter le
                 lien entre les gens et l’impact profond de la plantation de
                 graines. Les plantes jouent un rôle crucial dans le maintien
@@ -93,19 +93,13 @@ function AboutUs() {
             </h3>
             {showHow && (
               <p className={styles.answers}>
-                Save the Seeds est sur le point de rationaliser le processus
-                d'identification, de discussion et de replantation proactive
-                d'arbres à l'aide de graines provenant de notre alimentation.
-                Tirant parti d'une technologie de géolocalisation avancée et de
-                forums interactifs, nous servons de centre de communication
-                efficace pour les personnes qui partagent notre profond
-                engagement en faveur de la préservation de notre planète. Grâce
-                à notre plateforme, nous permettons aux utilisateurs de se
-                connecter, d'échanger des informations précieuses et de prendre
-                des mesures concrètes en faveur de la préservation de
-                l'environnement, en favorisant une communauté d'individus
-                partageant les mêmes idées et dédiés au bien-être de notre
-                planète.
+                Save the Seeds propose une plateforme pour tous ceux qui souhaite 
+                s'investir dans la protection de la nature.
+                Elle permet aux utilisateurs de se connecter, d'échanger des informations utiles 
+                et de prendre des mesures concrètes pour protéger l'environnement. Elle permet également de géolocaliser 
+                ses semis et ceux des autres utilisateurs.
+                Rejoignez notre communauté dédiée à la préservation de la nature et agissons ensemble 
+                pour le bien-être de notre planète.
               </p>
             )}
           </div>
