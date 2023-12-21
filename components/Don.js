@@ -30,10 +30,10 @@ function Don() {
     <div className={styles.container}>
       <h2 className={styles.title}>SOUTENEZ-NOUS !</h2>
       <div className={styles.questions}>
-        <h3 onClick={handleClick}>A quoi servent vos dons ?</h3>
+        <h3 className={styles.quest} onClick={handleClick}>A quoi servent vos dons ?</h3>
         {showUtility && (
           <p className={styles.answers}>
-            Nos dons servent à soutenir notre projet de plantation de graines.En
+            Nos dons servent à soutenir notre projet de plantation de graines. En
             faisant un don, vous contribuez directement à la réalisation de ces
             objectifs environnementaux. Vos dons nous permettent d'étendre nos
             plantations, d'atteindre un plus grand nombre de terres dégradées et
@@ -48,7 +48,7 @@ function Don() {
       </div>
       <div className={styles.blankspace}></div>
       <div className={styles.questions}>
-        <h3 onClick={handleClick2}>Puis-déduire mes dons de mes impôts ?</h3>
+        <h3 className={styles.quest}  onClick={handleClick2}>Puis-déduire mes dons de mes impôts ?</h3>
         {showTaxes && (
           <p className={styles.answers}>
             Etant une petite association qui débute, nous ne sommes pas encore
@@ -61,7 +61,7 @@ function Don() {
       </div>
       <div className={styles.blankspace}></div>
       <div className={styles.questions}>
-        <h3 onClick={handleClick3}>
+        <h3 className={styles.quest} onClick={handleClick3}>
           Save the seeds est-il entièrement financé par les dons ?
         </h3>
         {showMoney && (

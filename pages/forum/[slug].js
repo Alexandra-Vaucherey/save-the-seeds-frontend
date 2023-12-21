@@ -123,7 +123,7 @@ function posteBlog() {
         <div className={styles.lign}></div>
          <div className={styles.comment}>
             <h4 className={styles.response}>Répondre</h4> 
-            <p>Message</p>
+            <p className={styles.message}>Message</p>
         <textarea placeholder = 'Publier votre commentaire'className={styles.input} onChange={onChangeHandler} value={newComment}>
         </textarea>
         <div className={styles.bttn}>

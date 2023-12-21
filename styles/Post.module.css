@@ -131,13 +131,17 @@
     font-size: 40px;
 }
 
+.message{
+    font-size: 24px;
+}
+
 .input{
     background-color: #E1E8BA;
-    border-radius: 17px;
-    
+    border-radius: 17px;    
     height: 200px;
     border: none;
-    text-indent: 10px;    
+    text-indent: 10px;   
+    font-size: 18px; 
 }
 
 .button{

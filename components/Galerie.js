@@ -30,7 +30,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Poires</div>
+            <div>Poires</div>
           </div>
 
           <div>
@@ -40,7 +40,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Necterines</div>
+            <div>Nectarines</div>
           </div>
 
           <div>
@@ -50,7 +50,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Mangues</div>
+            <div>Mangues</div>
           </div>
 
           <div>
@@ -60,7 +60,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Pommes Rouges</div>
+            <div>Pommes Rouges</div>
           </div>
 
           <div>
@@ -70,7 +70,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Pommes Verts</div>
+            <div>Pommes Vertes</div>
           </div>
 
           <div>
@@ -80,7 +80,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Abricots</div>
+            <div>Abricots</div>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Grenades</div>
+            <div>Grenades</div>
           </div>
 
           <div>
@@ -134,7 +134,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Necterines</div>
+            <div>Nectarines</div>
           </div>
 
           <div>
@@ -144,7 +144,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Les Pêches</div>
+            <div>Pêches</div>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Mangues</div>
+            <div>Mangues</div>
           </div>
 
           <div>
@@ -178,7 +178,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Avocats</div>
+            <div>Avocats</div>
           </div>
 
           <div>
@@ -188,7 +188,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Necterines</div>
+            <div>Nectarines</div>
           </div>
 
           <div>
@@ -198,7 +198,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Les Pêches</div>
+            <div>Pêches</div>
           </div>
 
           <div>
@@ -208,7 +208,7 @@ function Galerie() {
               height="120px"
               className={styles.pic}
             ></img>
-            <div>Des Prunes</div>
+            <div>Prunes</div>
           </div>
         </div>
       </div>

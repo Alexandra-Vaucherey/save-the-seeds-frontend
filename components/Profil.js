@@ -88,10 +88,10 @@ function Profil() {
           <div>Votre impact: </div>
         </div>
         <div className={styles.impact}>
-          <div className={styles.plants}>Plantes:{listePlantes} </div>
+          <div className={styles.plants}>Plantes : {listePlantes} </div>
           <div className={styles.co2}>
             {/* on reprend le tableau et on multiplis par la valeur du nbre de CO2 absorbé par an (une moyenne de 19kg) */}
-            CO₂ Absorbé: {listePlantes * 19} kg/an.
+            CO₂ Absorbé : {listePlantes * 19} kg/an.
           </div>
         </div>
         <div className={styles.middleContainer}>

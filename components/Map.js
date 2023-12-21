@@ -166,16 +166,16 @@ function Map() {
       <Rectangle bounds={rectangle} pathOptions={greenOptions} />
       <Polyline pathOptions={purpleOptions} positions={multiPolyline} />
       <Circle center={center} pathOptions={redOptions} radius={3000} >
-        <Popup>zone où il est interdit de planter</Popup>
+        <Popup>Zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center1} pathOptions={redOptions} radius={5000} >
-        <Popup>zone où il est interdit de planter</Popup>
+        <Popup>Zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center2} pathOptions={redOptions} radius={5000} >
-        <Popup>zone où il est interdit de planter</Popup>
+        <Popup>Zone où il est interdit de planter</Popup>
       </Circle>
       <Circle center={center3} pathOptions={redOptions} radius={5000} >
-        <Popup>zone où il est interdit de planter</Popup>
+        <Popup>Zone où il est interdit de planter</Popup>
       </Circle>
 
     </MapContainer>

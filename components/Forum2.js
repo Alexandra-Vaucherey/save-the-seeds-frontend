@@ -75,16 +75,16 @@ function Forum2() {
         </div>
         <div>
           <div className={styles.text2}>Contenu du poste</div>
-          <input
-            type="text"
+          <textarea
+            placeholder='Mettez ici votre commentaire'
             value={comment}
             onChange={onChangeCommentHandler}
             className={styles.textbox2}
-          ></input>
+          ></textarea>
         </div>
       </div>
       <button type="submit" className={styles.submit} onClick={onClickHandler}>
-        Submit
+        Poster
       </button>
     </div>
   );
