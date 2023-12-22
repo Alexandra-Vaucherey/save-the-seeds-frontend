@@ -148,7 +148,7 @@ function Map() {
             Zones où planter des Lauracées
           </li>
           <li>
-            <img src="https://unpkg.com/leaflet@1.7/dist/images/marker-icon.png"></img>là où j'ai planter
+            <img src="https://unpkg.com/leaflet@1.7/dist/images/marker-icon.png"></img>Là où j'ai planter
           </li>
         </ul>
       </div>
