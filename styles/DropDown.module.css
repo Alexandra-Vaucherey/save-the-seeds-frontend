@@ -1,16 +1,10 @@
 .dropDown {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 100px;  
 
-  position: relative;
-  top: -55px;
-  
 
-.icon {
-    font-size: 40px;
-
-    
-  }
 }

@@ -61,8 +61,8 @@ function Modale() {
     userSection = (
       <div>
         <p>Welcome {user.username} / </p>
-        <Button className={styles.bttn1} onClick={() => handleLogout()}>
-        Deconnexion  
+        <Button className={styles.bttn11} onClick={() => handleLogout()}>
+        Déconnexion  
       </Button>
       </div>
     )}

@@ -19,6 +19,22 @@
    
 }
 
+.bttn11{
+    background-color: #E1E8BA;
+    border: none;
+    color:#224229;
+    display: flex;
+    font-size: 17px;
+    border-radius: 12px;
+    font-family: 'poppins';
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.bttn11:hover{
+    box-shadow: 0 12px 13px 0 #224229, 0 17px 30px 0 #224229;
+}
+
 .signInBttn{
     background-color: #224229;
     color: #FFFFFF;

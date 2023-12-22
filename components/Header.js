@@ -53,6 +53,8 @@ function Header() {
         <div className={styles.buttons}>
           {/* <p><button className={styles.inscription}>Inscription</button></p> */}
           <Modale />
+          </div>
+          <div>
           <DropDown />
           {/* <Link href="/profils">
             <a>Profils</a>
