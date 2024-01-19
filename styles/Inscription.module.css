@@ -93,6 +93,8 @@
     font-family: 'Poppins';
     height : 60px;
     white-space: nowrap;
+    max-width: 80px;
+    justify-content: center;
 }
 
 .creer:hover{
