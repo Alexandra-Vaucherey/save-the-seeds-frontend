@@ -139,7 +139,7 @@ function Inscription() {
 
         <div className={styles.halfContainer}>
           <div>
-            <label for="password">Password</label>
+            <label for="password">Mot de passe</label>
             <input
               className={styles.input}
               id="password"
@@ -149,7 +149,7 @@ function Inscription() {
             />
           </div>
           <div>
-            <label for="passwordcheck">Confirmation du password</label>
+            <label for="passwordcheck">Confirmation du mot de passe</label>
             <input
               className={styles.input}
               id="passwordcheck"
