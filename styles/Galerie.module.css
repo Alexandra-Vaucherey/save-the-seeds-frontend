@@ -1,8 +1,9 @@
 .title{
     color: #224229;
     padding:50px;
-    margin-top: 24px;
-    font-family: baskervville;
+    /*margin-top: 40px;*/
+    /*margin-bottom: 40px;*/
+    font-family:  "Libre Baskerville";
     font-size: 50px;
     font-weight: 600;
     display: flex;

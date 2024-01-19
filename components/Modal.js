@@ -58,6 +58,7 @@ function Modale() {
   }
     let userSection;
     if (user.token) {
+      
     userSection = (
       <div>
         <p>Welcome {user.username} / </p>

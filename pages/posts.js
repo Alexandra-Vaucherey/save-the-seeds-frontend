@@ -1,4 +1,4 @@
-import Post from '../components/Post';
+//import Post from '../components/Post';
 import Forum from '../components/Forum';
 import {
     BrowserRouter as Router,
