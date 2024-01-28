@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   overflow: hidden;
 }
 
@@ -44,8 +44,8 @@
   height: 26px;
   width: 100px;
   padding-bottom: 20px;
-  padding-top: 10px;
-  margin-top: 20px;
+  /*padding-top: 10px;*/
+  /*margin-top: 20px;*/
 }
 
 .inscription {
@@ -94,4 +94,10 @@
   color: #224229;
   font-family: 'Poppins';
   text-decoration: underline;
+}
+
+.dropDown{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
