@@ -20,17 +20,9 @@ const DropDown = () => {
         className={`${styles.icon} ${styles.dropDown}`}
         onClick={() => setIsOpen(!isOpen)}
       >
-        <FontAwesomeIcon icon={faUser} />
-        <Link href="/profils">
-          <a style={{ textDecoration: 'none', color: "black" }}>Profils</a>
-        </Link>
+      
       </div>
-      {isOpen && (
-        <ul>
-          <li>Mon profil</li>
-          {/* <li>Déconnexion</li> */};
-        </ul>
-      )}
+    
     </div>
   );
 };

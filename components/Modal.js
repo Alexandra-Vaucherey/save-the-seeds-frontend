@@ -4,6 +4,8 @@ import styles from '../styles/Modal.module.css';
 import { Modal, Button } from 'antd';
 import { login, logout } from '../reducers/user';
 import Link from 'next/link';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faSignOutAlt  } from "@fortawesome/free-solid-svg-icons";
 
 
 function Modale() {
@@ -60,8 +62,11 @@ function Modale() {
     if (user.token) {
       
     userSection = (
-      <div>
-        <p>Welcome {user.username} / </p>
+      <div className={styles.userSection}>
+        <Link href ="/profils">
+        <p className={styles.user}>Bienvenue <br/>
+        <FontAwesomeIcon icon={faUser} />{user.username}</p>
+          </Link>
         <Button className={styles.bttn11} onClick={() => handleLogout()}>
         Déconnexion  
       </Button>

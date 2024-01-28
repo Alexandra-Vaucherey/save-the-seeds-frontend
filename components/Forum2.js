@@ -47,7 +47,7 @@ function Forum2() {
   };
 
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.title}>
         FORUM{" "}
       </div>

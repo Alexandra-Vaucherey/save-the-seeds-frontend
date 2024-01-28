@@ -28,11 +28,13 @@
     border-radius: 12px;
     font-family: 'poppins';
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 500px;
+    
 }
 
 .bttn11:hover{
     box-shadow: 0 12px 13px 0 #224229, 0 17px 30px 0 #224229;
+    color: inherit;
 }
 
 .signInBttn{
@@ -103,8 +105,8 @@
 }
 
 .inscription{
-    border: none;
-    color:#224229;
+   border: none;
+   color:#224229;
    background-color: #E1E8BA;
    display: flex;
    justify-content: space-around;
@@ -113,3 +115,15 @@
    font-family: 'poppins';
    
     }
+
+.user{
+    cursor: pointer;   
+    font-family: 'Poppins';
+    font-size: 15.5px;
+}
+
+/*.userSection {
+    display: flex;
+    flex-direction: column;
+    
+}*/
