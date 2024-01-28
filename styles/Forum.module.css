@@ -8,11 +8,13 @@
     background-image: url("https://res.cloudinary.com/dt30jr39q/image/upload/v1702477898/c72wmnrtuvggibkffho5.jpg");
     background-size: cover;
     margin-top: 0;
+    flex-grow: 1;
 }
 
 .topContainer{
     flex:1;
-max-width:1100px;
+max-width:1200px;
+height : 100%;
 
 }
 
@@ -33,12 +35,18 @@ max-width:1100px;
     
 }
 
+
 .date{
     display: flex;
     justify-content: center ;
+    align-items: center;
     flex-direction: column;
+   margin-right: 50px;
 }
 
+.publish{
+    margin-left : 80px;
+}
 .recherche{
     background-color:#E1E8BA;
     color: #224229;
@@ -72,10 +80,16 @@ max-width:1100px;
 
 .publier{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin-left: 30px;
     color: #224229;
 }
+
+.search{
+    display: flex;
+    justify-content: center;
+}
+
 
 .pubbtn{
     background-color:#E1E8BA;
@@ -84,6 +98,8 @@ max-width:1100px;
     font-weight: 600;
     border-color: #224229;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 .pubbtn:hover{
@@ -97,6 +113,7 @@ max-width:1100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-size: medium;
     padding: 20px;
     margin-top: 10px;

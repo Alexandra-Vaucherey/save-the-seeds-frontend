@@ -59,20 +59,19 @@ function Forum() {
     <div className={styles.back}>
       <div className={styles.full}>
         <div className={styles.topContainer}>
-          <div className={styles.title}>
+          <h1 className={styles.title}>
             FORUM{" "}
            
-          </div>
-
-          <div>
-            <input
+          </h1>
+          <div className={styles.publier}>            
+            <div>
+              <input
               value={searchMsg}
-              onChange={(e) => setSearchMsg(e.target.value)} //e.target.value is the alue of wtvr is written inside the searchbar
+              onChange={(e) => setSearchMsg(e.target.value)} //e.target.value is the value of wtvr is written inside the searchbar
               type="textbox"
               className={styles.textbox}
             />
-          </div>
-          <div>
+            <div className={styles.search}>
             <button
               type="Search"
               className={styles.recherche}
@@ -87,20 +86,23 @@ function Forum() {
             >
               <FontAwesomeIcon icon={faRotateLeft} id="refresh" />
             </button>
-          </div>
-
-          <div className={styles.publier}>
+            </div>
+              </div>         
+          
+          <div>
             <Link href="/forum2">
               <button className={styles.pubbtn} id="publish button">
                 Publier un post
               </button>
             </Link>
+            </div>  
+         
           </div>
 
           <div className={styles.categories}>
             <div>Sujets</div>
 
-            <div>Date de publi.</div>
+            <div className={styles.publish}>Date de publication</div>
 
             <div>Messages</div>
           </div>
@@ -128,12 +130,16 @@ function Forum() {
 }
 
 function MessageBox(props) {
+  let title = props.title
+  if (title.length > 20){
+    title =title.slice(0,20)+"...";
+  }
   return (
     <Link href={`/forum/${props.slug}`}>
       <div className={styles.bottom} style={{ cursor: "pointer" }}>
-        <div>{props.title}</div>
+        <div className={styles.titleSubject}>{title}</div>
         <div className={styles.date}>{props.date_publish}</div>
-        <div>{props.nbAnswers} réponses</div>
+        <div className={styles.answers}>{props.nbAnswers} réponses</div>
       </div>
     </Link>
   );
