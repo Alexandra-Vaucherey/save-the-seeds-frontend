@@ -54,6 +54,10 @@ function Modale() {
     })
   }
 
+  const handleSignUp = () => {
+    setIsOpen(false);
+  }
+
   const handleLogout = () => {
     dispatch(logout());
 
@@ -102,7 +106,7 @@ function Modale() {
         <div>
           <div className={styles.username}>
           <p className={styles.text}>Nom d'utilisateur</p>
-          <input className={styles.input} type ='text' placeholder='Francis Lalane' id='Nom utilisateur'onChange={(e) => setSignInUsername(e.target.value)} value={signInUsername} ></input>
+          <input className={styles.input} type ='text' id='Nom utilisateur'onChange={(e) => setSignInUsername(e.target.value)} value={signInUsername} ></input>
           </div>
           <div className={styles.password}>
           <p className={styles.text}>Mot de passe</p>
@@ -118,7 +122,9 @@ function Modale() {
         </div>
         <div className={styles.click}>
             <Button className={styles.signInBttn} onClick={() => handleConnection()}>SE CONNECTER</Button>
-          <Button className={styles.signUpBttn}>CRÉER UN COMPTE</Button>
+          <Link href='/inscription'>
+          <Button className={styles.signUpBttn} onClick={() => handleSignUp()}>CRÉER UN COMPTE</Button>
+          </Link>
         </div>
       </Modal>
     </div>
