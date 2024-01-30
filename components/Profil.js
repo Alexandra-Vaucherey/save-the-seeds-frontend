@@ -98,7 +98,7 @@ function Profil() {
 
         <div className={styles.users}>
           <div>
-            <div>User 1</div>
+            <div>Citron</div>
             <img
               src="https://res.cloudinary.com/dt30jr39q/image/upload/v1702466127/nj7pmv7lupeqs2ycmfbj.webp"
               className={styles.user}
@@ -106,7 +106,7 @@ function Profil() {
           </div>
 
           <div>
-            <div>User 2</div>
+            <div>Nectarine</div>
             <img
               src="https://res.cloudinary.com/dt30jr39q/image/upload/v1702466451/kz3zy5e8dpzxezrwxax3.jpg"
               className={styles.user}
@@ -114,14 +114,14 @@ function Profil() {
           </div>
 
           <div>
-            <div>User 3</div>
+            <div>Orange</div>
             <img
               src="https://res.cloudinary.com/dt30jr39q/image/upload/v1702466863/lulwabjafvxl6xlsxrd4.jpg"
               className={styles.user}
             ></img>
           </div>
           <div>
-            <div>User 4</div>
+            <div>Pomme</div>
             <img
               src="https://res.cloudinary.com/dt30jr39q/image/upload/v1702457967/xhubnkghe7wr70vfx04u.jpg"
               className={styles.user}
