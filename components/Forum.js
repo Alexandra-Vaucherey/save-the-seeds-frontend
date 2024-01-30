@@ -28,7 +28,17 @@ function Forum() {
     return `${day}/${month}/${year}`; // changes the format on return
   }
 
-  const allMessages = message.map((data, i) => {
+  function sortByDate(messages) {
+    return messages.sort((a, b) => {
+      const dateA = new Date(a.date_publish); // convertit la date en format de date JavaScript
+      const dateB = new Date(b.date_publish);
+      return dateB - dateA; // trie les messages par ordre décroissant de date
+    });
+  }
+
+  const sortedMessages = sortByDate(message); // tri les messages par date
+
+  const allMessages = sortedMessages.map((data, i) => {
     return (
       <MessageBox
         key={i}
